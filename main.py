@@ -9,14 +9,19 @@ import quandl
 # a = web.DataReader("JPY=X", 'yahoo')
 # jpy = web.get_data_fred('DEXJPUS')
 # print jpy
+import warnings
+warnings.filterwarnings('ignore')
 
+import warnings
+warnings.simplefilter(action = "ignore", category = FutureWarning)
 def get_data():
     data = quandl.get("ECB/EURUSD", authtoken="G-_-G7yn75tX64T3fKXc")
-    print data.head()
+#    print data.head()
+    return data
 
 def main():
-    print "s"
+    euro = get_data()
+    print euro.head()
 
 if __name__ == "__main__":
     main()
-    data = get_data()
