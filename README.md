@@ -28,6 +28,7 @@ ip: 120.27.155.55
 
 **连接：**
 windows 下建议使用MySQL workbench。
+
 **MATLAB**
 > - **Step 1.** 按照此[链接][1]的教程进行MATLAB与MYSQL服务器进行连接。
 > - **Step 2.** 在Database Explorer 中可直接进行MYSQL数据表的查看，要获得所需数据并导出到table形式的Dataset, 只需运行**import_data_to_matlab_security_test.m**即可得到。
@@ -42,9 +43,7 @@ __prequirement:__
 > ```
 > conda install -c anaconda mysql-connector-python=2.0.3
 > ```
- 
 
- 
 __使用方法：__
 > - **1.** 直接在python环境下运行脚本retrieving_data_table.py， 取得的数据会存在pandas.DataFrame对象下。
 > - **2.** 为了避免重复从MySQL服务器读取数据，从而花费大量时间，建议把已经读取出来的数据存储在本地，可使用pd.to_csv(name)保存dataframe为csv格式文件。
