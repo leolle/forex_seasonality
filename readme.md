@@ -46,7 +46,7 @@ __prequirement:__
 __使用方法：__
 > - **1.** 直接在python环境下运行脚本retrieving_data_table.py， 取得的数据会存在pandas.DataFrame对象下。
 > - **2.** 为了避免重复从MySQL服务器读取数据，从而花费大量时间，建议把已经读取出来的数据存储在本地，可使用pd.to_csv(name)保存dataframe为csv格式文件。
- > - **3.**
+
 
 **更新频率**
 可根据策略的运行频率来进行确定，目前默认为每周五下午更新。
